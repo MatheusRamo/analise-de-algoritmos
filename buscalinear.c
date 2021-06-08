@@ -8,7 +8,7 @@ int buscaLinear(int arr[], int n, int k)
         if(arr[i] == k) return i;
     }
 
-    return 0;
+    return -1;
 }
 
 int main(void)
@@ -27,7 +27,7 @@ int main(void)
 
     check = buscaLinear(array, n, k);
 
-    if(check)
+    if(check != -1)
     {
         printf("\nO valor %d existe no array\n", k);
     }
@@ -35,7 +35,6 @@ int main(void)
     {
         printf("\nO elemento %d não existe no array\n", k);
     }
-
 
     return 0;
 }

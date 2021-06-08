@@ -8,7 +8,7 @@ Percorra o vetor, comparando cada posiçaõ com o valor k.
 Se o elemento A[i] é igual a k, devolva i. Se nenhum elemento for igual a k, devolva -1.
 
 ```
-BuscaLiner(A, n, k)
+BuscaLinear(A, n, k)
     i = 1
     enquanto i < n faça
         se A[i] == k então
@@ -29,6 +29,6 @@ int buscaLinear(int arr[], int n, int k)
         if(arr[i] == k) return i;
     }
 
-    return 0;
+    return -1;
 }
 ```
