@@ -1,13 +1,13 @@
 # Análise de Algoritmos
 
-# Busca Linear
+## Busca Linear
 
 Dado um vetor A[1...n] contendo n números reais e um número k qualquer, descobrir se k está armazenado em A.
 
 Percorra o vetor, comparando cada posiçaõ com o valor k.
 Se o elemento A[i] é igual a k, devolva i. Se nenhum elemento for igual a k, devolva -1.
 
-```
+```c
 BuscaLinear(A, n, k)
     i = 1
     enquanto i < n faça
@@ -20,7 +20,7 @@ BuscaLinear(A, n, k)
 
 ## Implementação em C
 
-```
+```c
 int buscaLinear(int arr[], int n, int k)
 {
     int i;
