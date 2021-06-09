@@ -68,12 +68,12 @@ int buscaLinearEmOrdem(int arr[], int n, int k)
 BuscaBinaria(A, n, k)
     esq = 1
     dir = n
-    enquanto esq <=dir faça
+    enquanto esq <= dir faça
         meio = (esq + dir) / 2
         se A[meio] == k então
             devolve meio
         senão se k > A[meio] então
-            devolve esq = meio + 1
+            esq = meio + 1
         senão
             dir = meio - 1
     devolve -1
