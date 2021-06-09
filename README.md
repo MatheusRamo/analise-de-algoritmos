@@ -92,7 +92,6 @@ int buscaBinaria(int arr[], int n, int k)
     while(left <= right)
     {
         half = (left + right) / 2;
-        printf("%d ", half);
         
         if(arr[half] == k)
         {
