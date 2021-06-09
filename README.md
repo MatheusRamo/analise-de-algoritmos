@@ -79,3 +79,34 @@ BuscaBinaria(A, n, k)
     devolve -1
 
 ```
+
+## Implementação Em C
+
+```c
+int buscaBinaria(int arr[], int n, int k)
+{
+    int left, right, half;
+    left = 0;
+    right = n;
+
+    while(left <= right)
+    {
+        half = (left + right) / 2;
+        printf("%d ", half);
+        
+        if(arr[half] == k)
+        {
+            return half;
+        }
+        else if (k > arr[half] )
+        {
+            left = half + 1;
+        }
+        else
+        {
+            right = half - 1;
+        }
+    }
+    return -1;
+}
+```
