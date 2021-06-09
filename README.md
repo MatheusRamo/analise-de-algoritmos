@@ -4,7 +4,7 @@
 
 Dado um vetor A[1...n] contendo n números reais e um número k qualquer, descobrir se k está armazenado em A.
 
-Percorra o vetor, comparando cada posiçaõ com o valor k.
+Percorra o vetor, comparando cada posição com o valor k.
 Se o elemento A[ i ] é igual a k, devolva i. Se nenhum elemento for igual a k, devolva -1.
 
 ```c
@@ -35,7 +35,7 @@ int buscaLinear(int arr[], int n, int k)
 
 ## Busca Em Dados Ordenados
 
-Dado um vetor A[1...n] contendo n números reais em ordem crescente, i.e., A[ i ] <=A[i + 1] para todo 1 <= i <= n, e um número real k qualquer, descobrir se k está armazenado em A.
+Dado um vetor A[1...n] contendo n números reais em ordem crescente, i.e., A[ i ] <=A[i + 1] para todo 1 <= i < n, e um número real k qualquer, descobrir se k está armazenado em A.
 
 ```c
 BuscaLinearEmOrdem(A, n, k)
@@ -60,4 +60,22 @@ int buscaLinearEmOrdem(int arr[], int n, int k)
 
     return -1;
 }
+```
+
+## Busca Binaria
+
+```c
+BuscaBinaria(A, n, k)
+    esq = 1
+    dir = n
+    enquanto esq <=dir faça
+        meio = (esq + dir) / 2
+        se A[meio] == k então
+            devolve meio
+        senão se k > A[meio] então
+            devolve esq = meio + 1
+        senão
+            dir = meio - 1
+    devolve -1
+
 ```
